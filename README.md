@@ -2,7 +2,7 @@
 
 A ZSH utility that helps you quickly copy file paths in various formats. Perfect for developers who frequently need to reference files in different contexts - from terminal commands to documentation.
 
-![Demo of path utility in action](demo.gif)
+![Demo of path utility in action](demo.gif?new)
 
 ## Features
 
