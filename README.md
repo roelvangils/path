@@ -2,6 +2,8 @@
 
 A ZSH utility that helps you quickly copy file paths in various formats. Perfect for developers who frequently need to reference files in different contexts - from terminal commands to documentation.
 
+![Demo of path utility in action](demo.gif)
+
 ## Features
 
 - **Interactive menu** with 15+ path format options
@@ -100,6 +102,10 @@ Note: Some options only appear when relevant (e.g., escaped versions only show f
 - Press Enter to copy the selected format to clipboard
 - Press Esc or Ctrl+C to cancel without copying
 - The "Reveal in Finder" and "Open" options execute commands instead of copying
+
+## Credits
+
+Demo GIF created with [VHS](https://github.com/charmbracelet/vhs) - a tool for creating terminal GIFs from code.
 
 ## License
 
