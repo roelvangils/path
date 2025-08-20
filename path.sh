@@ -155,15 +155,14 @@ process_path() {
     done
 
     local choice
-    if ! choice=$(gum choose \
+    if ! choice=$(printf '%s\n' "${menu_items[@]}" | gum filter \
         --height=20 \
-        --header="Choose path format or action (type to filter)" \
+        --header="Choose path format or action" \
+        --placeholder="Type to filter..." \
         --cursor.foreground="$CURSOR_FG" \
         --selected.foreground="$SELECTED_FG" \
         --header.foreground="$HEADER_FG" \
-        --no-show-help \
-        --cursor="→ " \
-        "${menu_items[@]}"); then
+        --indicator="→ "); then
         echo "No selection made." >&2
         return 1
     fi
