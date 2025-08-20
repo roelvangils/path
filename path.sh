@@ -156,7 +156,6 @@ process_path() {
 
     local choice
     if ! choice=$(gum choose \
-        --filter \
         --height=20 \
         --header="Choose path format or action (type to filter)" \
         --cursor.foreground="$CURSOR_FG" \
